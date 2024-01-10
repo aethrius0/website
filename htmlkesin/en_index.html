@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Sales Main Dealer</title>
+    
+    <style>
+        body {
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: steelblue;
+        }
+
+        header a {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            margin: 0;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+        }
+
+        header a:hover {
+            background-color: aquamarine;
+            color: steelblue;
+            transition-duration: 0.7s;
+        }
+
+        td {
+            display: inline-block;
+            height: 150px;
+            margin: 70px;
+            padding: 16px;
+            line-height: 100px;
+        }
+
+        .table2  {
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        td a {
+            display: block;
+            position: relative;
+        }
+
+        td img {
+            width: 300px;
+            height: 250px;
+            border: 3px solid black;
+            border-radius: 15px;
+            border: none;
+            box-sizing: border-box;
+            transition: border-radius 0.7s; 
+        }
+
+        td a:hover img {
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            font-size: large;
+            height: 90px;
+            bottom: 0;
+            width: 100%;
+        }
+        .blog {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            max-width: 600px; 
+            margin-left: auto;
+            margin-right: auto;
+            flex-basis: 48%; 
+        }
+
+        .blog-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: steelblue;
+            margin-bottom: 10px;
+        }
+
+        .blog-date {
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        .blog-content {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .blog-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+
+<body background="./images/arkaplan.jpg">
+
+    <header>
+        <a href="en_index.html">Home</a>
+        <a href="en_cars.html">Vehicles</a>
+        <a href="en_contact.html">Contact</a>
+        <a href="en_aboutus.html">About Us</a>
+        <a href="index.html"><img src="./images/tr.png" alt="Turkish"></a>
+    </header>
+
+    <br>
+    
+    <img src="./images/anasayfa.jpg" alt="First picture" >
+    
+    <table class="table2">
+        <tr>
+            <td><a href="en_cars.html"><img src="./images/porsche.jpg" alt="Porsche"></a></td>
+            <td><a href="en_cars.html"><img src="./images/bmwlogo.jpg" alt="BMW"></a></td>
+            <td><a href="en_cars.html"><img src="./images/mercedeslogo.png" alt="Mercedes"></a></td>
+            <td><a href="en_cars.html"><img src="./images/opellogo.jpg" alt="Opel"></a></td>
+        </tr>
+    </table>
+    
+    <br><br><br>
+
+    <div class="blog">
+        <div class="blog-title">Eye-Catching and Electric Design: Audi e-tron GT</div>
+        <div class="blog-date"><b>  06.01.2024 Saturday </b>published.</div>
+        <img class="blog-image"  src="./images/audi-etron-gt-inceleme.png" alt="Blog Post-1 ">
+        <div class="blog-content">
+            <p>The Audi e-tron GT is one of Audi's most eye-catching models in the world of electric cars. With its high-tech interior, sporty and agile exterior, and easy charging capability, the Audi
+                e-tron GT stands out among the brand's high-performance electric models. It is also environmentally friendly with zero CO2 emissions. Explore the features, technical specifications, and
+                more about the Audi e-tron GT in our content, and get answers to all your questions about the model.</p>
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="blog-title">Most Asked Questions About the 2023 Jeep Renegade e-Hybrid</div>
+        <div class="blog-date"><b>  07.01.2024 Sunday </b>published.</div>
+        <img class="blog-image"  src="./images/jeep-renegade-e-hybrid.png" alt="Blog Post-2 ">
+        <div class="blog-content">
+            <p>Jeep introduces the 2023 e-Hybrid version of the Renegade, one of its pioneering models. Combining Jeep's iconic design and performance with hybrid technology, the Renegade e-Hybrid
+                sets a new standard in the automotive world. Equipped with impressive off-road capabilities and an environmentally friendly approach, this model stands out. It is available in two
+                trim packages: Longitude and Limited.</p>
+        </div>
+    </div>
+
+    <footer>
+        <br><p>&copy; 2024 Car Sales Main Dealer. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

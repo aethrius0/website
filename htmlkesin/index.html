@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araba Satış Ana Bayi</title>
+    
+    <style>
+        body {
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+           
+            
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color:steelblue;
+        }
+
+        header a {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            margin: 0;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            
+        }
+
+        header a:hover {
+            background-color:aquamarine;
+            color: steelblue;
+            transition-duration: 0.7s;
+        }
+
+        td {
+            display: inline-block;
+            height: 150px;
+            margin: 70px;
+            padding: 16px;
+            line-height: 100px;
+        }
+
+        .table2  {
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        td a {
+            display: block;
+            position: relative;
+            
+        }
+
+        td img {
+            width: 300px;
+            height: 250px;
+            border: 3px solid black;
+            border-radius: 15px;
+            border: none;
+            box-sizing: border-box;
+            transition: border-radius 0.7s; 
+        }
+
+        td a:hover img {
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            font-size: large;
+            height: 90px;
+            bottom: 0;
+            width: 100%;
+        }
+        .blog {
+            
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            max-width: 600px; 
+            margin-left: auto;
+            margin-right: auto;
+            flex-basis: 48%; 
+        }
+
+        .blog-basligi {
+            font-size: 24px;
+            font-weight: bold;
+            color: steelblue;
+            margin-bottom: 10px;
+        }
+
+        .blog-tarih {
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        .blog-icerik {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .blog-resim {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+
+<body background="./images/arkaplan.jpg">
+
+    <header>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="cars.html">Araçlar</a>
+        <a href="contact.html">İletişim</a>
+        <a href="aboutus.html">Hakkımızda</a>
+        <a href="en_index.html"><img src="./images/en.png" alt="English"></a>
+    </header>
+
+    <br>
+    
+    <img src="./images/anasayfa.jpg" alt="İlk resim" >
+
+    
+    <table class="table2">
+        <tr>
+            <td><a href="cars.html"><img src="./images/porsche.jpg" alt="Porsche"></a></td>
+            <td><a href="cars.html"><img src="./images/bmwlogo.jpg" alt="BMW"></a></td>
+            <td><a href="cars.html"><img src="./images/mercedeslogo.png" alt="Mercedes"></a></td>
+            <td><a href="cars.html"><img src="./images/opellogo.jpg" alt="Opel"></a></td>
+        </tr>
+    </table>
+    
+    <br><br><br>
+
+    <div class="blog">
+        <div class="blog-basligi">Göz Alıcı ve Elektrikli Bir Tasarım: Audi e-tron GT</div>
+        <div class="blog-tarih"><b>  06.01.2024 Cumartesi </b>yayınlandı.</div>
+        <img class="blog-resim"  src="./images/audi-etron-gt-inceleme.png" alt="Blog Post-1 ">
+        <div class="blog-icerik">
+            <p>Audi e-tron GT, otomobil devi Audi’nin elektrikli otomobilleri içerisinde en dikkat çekici modellerden biri. Yüksek teknoloji ile donatılan iç mekânı, sportif ve çevik dış 
+                görünümü, kolay şarj imkânı ile Audi e-tron GT, markanın elektrikli otomobil piyasasındaki yüksek performanslı modelleri arasında. Aynı zamanda sıfır CO2 emisyonu ile de çevre 
+                dostu. Audi e-tron GT özellikleri, teknik değerleri ve çok daha fazlasını siz de içeriğimizde keşfedebilir, model hakkındaki tüm sorularınıza yanıt alabilirsiniz.</p>
+            
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="blog-basligi">2023 Jeep Renegade e-Hybrid ile İlgili En Çok Merak Edilenler</div>
+        <div class="blog-tarih"><b>  07.01.2024 Pazar </b>yayınlandı.</div>
+        <img class="blog-resim"  src="./images/jeep-renegade-e-hybrid.png" alt="Blog Post-2 ">
+        <div class="blog-icerik">
+            <p>Jeep, sınıfının öncüsü modellerinden biri olan Renegade’in 2023 e-Hybrid versiyonu ile karşımıza çıkıyor. Jeep’in ikonik tasarımı ve performansını hibrit teknolojisiyle 
+                birleştiren Renegade e-Hybrid, otomobil dünyasında çığır açıyor. Hem çevre dostu hem de sürüş keyfini üst düzeye taşıyan bu model, merak uyandıran bir dizi özellikle donatılmış 
+                durumda. Bu araç, sadece etkileyici off-road kabiliyetleriyle değil, aynı zamanda çevre dostu bir yaklaşım sunarak da dikkat çekiyor. Longitude ve Limited olmak üzere iki donanım
+                 paketiyle satışa sunuluyor.</p>
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <br><p>&copy; 2024 Araba Satış Ana Bayii. Tüm hakları saklıdır.</p>
+    </footer>
+    
+    
+</body>
+</html>

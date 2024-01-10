@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Panamera</title>
+    <style>
+        body {
+            text-align: center;
+            background: url('/images/arkaplan.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: steelblue;
+        }
+
+        header a {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            margin: 0;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        header a:hover {
+            background-color: aquamarine;
+            color: steelblue;
+            transition-duration: 0.7s;
+        }
+        h2{
+            color: black;
+        }
+
+        b{
+            color: black;
+        }
+        
+        footer {
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            font-size: large;
+            height: 90px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .car-details {
+            padding: 20px;
+            color: white;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .car-table {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .car-row {
+            display: table-row;
+        }
+
+        .car-cell {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .car-image {
+            width: 40%; 
+        }
+
+        .car-image img {
+            width: 680px;
+            height: 450px;
+        }
+
+        .car-details {
+            width: 60%; 
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            text-align: left;
+        }
+        .car-gallery img {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+        }
+        .feature-images { 
+            justify-content: space-around;
+        }
+
+        .feature-images img {
+            width: 320px;
+            height: 200px;
+            margin: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="/index.html">Ana Sayfa</a>
+        <a href="/cars.html">Araçlar</a>
+        <a href="/contact.html">İletişim</a>
+        <a href="/aboutus.html">Hakkımızda</a>
+        <a href="./en_porsche_panamera.html"><img src="/images/en.png"></a>
+    </header>
+
+    <br><br><br><br>
+
+    <div class="car-table">
+        <div class="car-row">
+            <div class="car-cell car-image">
+                <img src="/images/porsche-panamera.jpg" alt="a">
+            </div>
+            <div class="car-cell car-details">
+                <h2><b><u>Porsche Panamera Özellikleri</u></b></h2>
+                
+                <table>
+                    <tr>
+                        <td><p><b>Yakıt Tipi:</b> Benzin / Elektrik</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><b>Yıl:</b> 2023</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><p><b>Maksimum beygir gücü:</b> 330 HP / 245 kW</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><b>Silindir hacmi:</b> 2.894 cm3 / 176.3 cu-in Sıralı 6</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><b>Maksimum tork:</b> 770 Nm @ 2330-4000 dev/dak </p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><b>Maksimum sürat / Azami Hız:</b> 315 km/h / 195.73 Mph</p></td>
+                    </tr>
+                    
+                </table>
+
+            </div>
+        </div>
+    </div>
+    
+    <br><br><br>
+
+    <section class="car-gallery">
+        <div class="feature-images">
+            <img src="/porsche_panamera_images/front.jpg" alt="Araba Resmi 1">
+            <img src="/porsche_panamera_images/side.jpg" alt="Araba Resmi 2">
+            <img src="/porsche_panamera_images/back.jpg" alt="Araba Resmi 3">
+        </div>
+        
+    </section>
+
+    
+    <footer>
+        <br>
+        <p>&copy; 2024 Araba Satış Ana Bayii. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+
+</html>

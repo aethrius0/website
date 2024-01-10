@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Best Vehicles</title>
+    <style>
+        body {
+            background: url('images/arkaplan.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: steelblue;
+        }
+
+        header a {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            margin: 0;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+        }
+
+        header a:hover {
+            background-color: aquamarine;
+            color: steelblue;
+            transition-duration: 0.7s;
+        }
+
+        #container {
+            display: flex;
+            /* Flexbox usage */
+            flex-wrap: wrap;
+            /* Horizontal arrangement and wrapping to the next line */
+        }
+
+        #sidebar {
+            flex: 1;
+            /* Sidebar width */
+            padding: 20px;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        #content {
+            flex: 4;
+            /* Content section width */
+            padding: 20px;
+            box-sizing: border-box;
+            color: rgb(7, 6, 6);
+            display: flex;
+            /* Flexbox usage within content */
+            flex-wrap: wrap;
+            /* Horizontal arrangement and wrapping within content */
+            gap: 60px;
+            /* Gap between content elements */
+        }
+
+
+        .car-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .car {
+            background-color: white;
+            border: 1px solid #161515;
+            border-radius: 5px;
+            margin: 60px;
+            padding: 10px;
+            width: 300px;
+        }
+
+        .car img {
+            width: 300px;
+            height: 170px;
+            border-radius: 5px;
+        }
+
+        .car h2 {
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            font-size: large;
+            height: 90px;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function filterCars() {
+            var filter = document.getElementById("filter").value;
+            var cars = document.querySelectorAll('.car');
+
+            cars.forEach(function (car) {
+                var type = car.getAttribute('data-type');
+                if (filter === 'all' || type === filter) {
+                    car.style.display = 'block';
+                } else {
+                    car.style.display = 'none';
+                }
+            });
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <a href="en_index.html">Home</a>
+        <a href="en_cars.html">Vehicles</a>
+        <a href="en_contact.html">Contact</a>
+        <a href="en_aboutus.html">About Us</a>
+        <a href="cars.html"><img src="./images/tr.png"></a>
+    </header>
+
+    <div id="container">
+        <div id="sidebar">
+            <br><br><br><br>
+            <label for="filter">Filter by Brand:</label>
+            <select id="filter" onchange="filterCars()">
+                <option value="all">All</option>
+                <option value="porsche">Porsche</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+            </select>
+
+
+            <hr>
+
+            <img src="./images/reklam2.jpg" alt="Reklam" width="340px" height="300px">
+            <br>
+            <img src="./images/reklam3.jpg" alt="Reklam" width="340px" height="500px">
+           
+
+        </div>
+
+        <div id="content">
+            <div class="car-list">
+                <div class="car" data-type="porsche">
+                    <a href="./cars/porsche_taycan.html"><img src="./images/porsche2.jpg" alt="Car 1"></a>
+                    <h2 id="car1">Porsche Taycan</h2>
+                    <p id="price1">Price: 7,500,000 TL</p>
+                    <p id="year1">Year: 2022</p>
+                    <p id="km1">Mileage: 30,000</p>
+                </div>
+
+                <div class="car" data-type="bmw">
+                    <a href="./cars/bmw_m3.html"><img src="./images/bmw.jpg" alt="Car 2"></a>
+                    <h2>BMW M3 GTR E46</h2>
+                    <p id="price1">Price: 3,000,000 TL</p>
+                    <p id="year1">Year: 2001</p>
+                    <p id="km1">Mileage: 25,000</p>
+                </div>
+
+                <div class="car" data-type="mercedes">
+                    <a href="./cars/mercedes_benz.html"><img src="./images/mercedes.jpg" alt="Car 3"></a>
+                    <h2>Mercedes Benz S</h2>
+                    <p id="price1">Price: 12,410,000 TL</p>
+                    <p id="year1">Year: 2021</p>
+                    <p id="km1">Mileage: 40,000</p>
+                </div>
+
+                <div class="car" data-type="porsche">
+                    <a href="./cars/porsche_911.html"><img src="./images/porsche-911.jpg" alt="Car 4"></a>
+                    <h2>Porsche 911 GT3</h2>
+                    <p id="price1">Price: 20,000,000 TL</p>
+                    <p id="year1">Year: 2021</p>
+                    <p id="km1">Mileage: 10,000</p>
+                </div>
+
+                <div class="car" data-type="porsche">
+                    <a href="./cars/porsche_panamera.html"><img src="./images/porsche-panamera.jpg" alt="Car 5"></a>
+                    <h2>Porsche Panamera</h2>
+                    <p id="price1">Price: 18,350,000 TL</p>
+                    <p id="year1">Year: 2023</p>
+                    <p id="km1">Mileage: 60,000</p>
+                </div>
+
+                <div class="car" data-type="mercedes">
+                    <a href="./cars/mercedes_amg.html"><img src="./images/mercedes-amg.jpg" alt="Car 6"></a>
+                    <h2>Mercedes Benz-AMG GT</h2>
+                    <p id="price1">Price: 10,688,000 TL</p>
+                    <p id="year1">Year: 2024</p>
+                    <p id="km1">Mileage: 20,000</p>
+                </div>
+
+                <div class="car" data-type="mercedes">
+                    <a href="./cars/mercedes_gls.html"><img src="./images/mercedes-suv.jpg" alt="Car 7"></a>
+                    <h2>Mercedes Benz-GLS (SUV)</h2>
+                    <p id="price1">Price: 4,675,000 TL</p>
+                    <p id="year1">Year: 2016</p>
+                    <p id="km1">Mileage: 90,000</p>
+                </div>
+
+                <div class="car" data-type="bmw">
+                    <a href="./cars/bmw_gran.html"><img src="./images/bmw-3.jpg" alt="Car 8"></a>
+                    <h2>BMW 2 Gran Coupe</h2>
+                    <p id="price1">Price: 3,000,000 TL</p>
+                    <p id="year1">Year: 2020</p>
+                    <p id="km1">Mileage: 20,000</p>
+                </div>
+
+                <div class="car" data-type="mercedes">
+                    <a href="./cars/mercedes_evo.html"><img src="./images/mercedes-evo.jpg" alt="Car 9"></a>
+                    <h2>Mercedes-Benz 190E Evo</h2>
+                    <p id="price1">Price: 1,205,000 TL</p>
+                    <p id="year1">Year: 1990</p>
+                    <p id="km1">Mileage: 200,000</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <br><p>&copy; 2024 Car Sales Main Dealer. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

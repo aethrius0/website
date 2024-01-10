@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche 911</title>
+    <style>
+        body {
+            text-align: center;
+            background: url('/images/arkaplan.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: steelblue;
+        }
+
+        header a {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            margin: 0;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        header a:hover {
+            background-color: aquamarine;
+            color: steelblue;
+            transition-duration: 0.7s;
+        }
+        h2{
+            color: black;
+        }
+
+        b{
+            color: black;
+        }
+        
+        footer {
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            font-size: large;
+            height: 90px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .car-details {
+            padding: 20px;
+            color: white;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        .car-table {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .car-row {
+            display: table-row;
+        }
+
+        .car-cell {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .car-image {
+            width: 40%; 
+        }
+
+        .car-image img {
+            width: 650px;
+            height: auto;
+        }
+
+        .car-details {
+            width: 60%; 
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            text-align: left;
+        }
+        .car-gallery img {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+        }
+        .feature-images { 
+            justify-content: space-around;
+        }
+
+        .feature-images img {
+            width: 320px;
+            height: 210px;
+            margin: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="/en_index.html">Home</a>
+        <a href="/en_cars.html">Vehicles</a>
+        <a href="/en_contact.html">Contact</a>
+        <a href="/en_aboutus.html">About Us</a>
+        <a href="./porsche_911.html"><img src="/images/tr.png"></a>
+    </header>
+
+    <br><br><br><br>
+
+    <div class="car-table">
+        <div class="car-row">
+            <div class="car-cell car-image">
+                <img src="/images/porsche-911.jpg" alt="a">
+            </div>
+            <div class="car-cell car-details">
+                <h2><b><u>Porsche 911 GT3 Features</u></b></h2>
+                
+                <table>
+                    <tr>
+                        <td><p><b>Fuel Type:</b> Gasoline</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><b>Year:</b> 2021</p></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><p><b>Maximum Horsepower:</b> 510 HP</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><b>Engine Displacement:</b> 3996 cm3 / 243.85 cu-in Inline 6</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><b>Maximum Torque:</b> 470 Nm @ 6100 rpm </p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p><b>Maximum Speed:</b> 320 km/h / 199.84 Mph</p></td>
+                    </tr>
+                    
+                </table>
+
+            </div>
+        </div>
+    </div>
+    
+    <br><br><br>
+
+    <section class="car-gallery">
+        <div class="feature-images">
+            <img src="/porsche_911_gt3_images/front.jpg" alt="Car Image 1">
+            <img src="/porsche_911_gt3_images/inside.jpg" alt="Car Image 2">
+            <img src="/porsche_911_gt3_images/back.jpg" alt="Car Image 3">
+        </div>
+        
+    </section>
+
+    
+    <footer>
+        <br>
+        <p>&copy; 2024 Car Sales Main Dealer. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
